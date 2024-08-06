@@ -1,6 +1,14 @@
 [package]
-name = "fibonacci-xd"
+name = "fibonacci"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+cached = "0.53.1"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "benchmarks"
+harness = false
